@@ -4,7 +4,7 @@ import psycopg2
 import requests
 import time
 
-load_dotenv()
+load_dotenv('../env/.env')
 API_KEY = os.environ.get("API_KEY")
 
 tiers = ['IRON', 'BRONZE', 'SILVER', 'GOLD', 'PLATINUM','EMERALD', 'DIAMOND']
