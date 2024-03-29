@@ -7,25 +7,18 @@ import time
 load_dotenv('../env/.env')
 API_KEY = os.environ.get("API_KEY")
 
-# Setup connection to Database
+# Setup connection to Database, if in production, store in dotenv file
 conn = psycopg2.connect(database="riotdb", user="jake", password="password", host="localhost", port="5432")
 cursor = conn.cursor()
 
-# Jan 11th 2024 @ 2:00 UTC, babe wake up, new map dropped.
-newMapEpoch = 1704938400
+# March 28th 2024 @ 00:00 UTC
+newMapEpoch = 1711584000
 
-# Query only puuid column
 query = "SELECT puuid, region, tier FROM summoners;"
 cursor.execute(query)
 
-# Get all rows
 results = cursor.fetchall()
-
-# Close the cursor for SELECT Query
 cursor.close()
-
-#regions = ['BR1', 'EUN1', 'EUW1', 'JP1', 'KR', 'LA1', 'LA2', 'NA1',
-#          'OC1', 'PH2', 'RU', 'SG2', 'TH2', 'TR1', 'TW2', 'VN2']
 
 def map_region(value):
     region_mapping = {

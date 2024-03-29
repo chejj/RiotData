@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python_scripts=("br1.py" "eun1.py" "euw1.py" "jp1.py" "kr.py" "la1.py" "la2.py" "na1.py" "oc1.py" "ph2.py" "ru.py" "sg2.py" "th2.py" "tr1.py" "tw2.py" "vn2.py")
+python_scripts=("../summoners/br1.py" "../summoners/eun1.py" "../summoners/euw1.py" "../summoners/jp1.py" "../summoners/kr.py" "../summoners/la1.py" "../summoners/la2.py" "../summoners/na1.py" "../summoners/oc1.py" "../summoners/ph2.py" "../summoners/ru.py" "../summoners/sg2.py" "../summoners/th2.py" "../summoners/tr1.py" "../summoners/tw2.py" "../summoners/vn2.py")
 
 for script in "${python_scripts[@]}"
 do
