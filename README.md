@@ -1,5 +1,5 @@
 # RiotData
-Repository of code to collect and analyze data from Riot Games API
+Repository of code to collect and analyze data from Riot Games API, to view classification analysis, read classification.ipynb.
 
 ## Context
 
